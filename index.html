@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Navid Dev - Responsive Minimal Langing Page</title>
+		<title>NAF-FLY - Creative Studio Langing Page</title>
 
 		<!--=============== FAVICON ===============-->
 		<!-- <link rel="shortcut icon" href="" type="image/x-icon" /> -->
@@ -26,7 +26,17 @@
 				<a href="/" class="logo">
 					<img src="assets/img/logo.png" alt="logo" />
 				</a>
-				<div id="trigger-menu" class="menu-icon">
+				<nav class="desktop-menu mobile-hidden">
+					<ul>
+						<li><a href="#home_section">Home</a></li>
+						<li><a href="#about_section">About</a></li>
+						<li><a href="#products_section">Products</a></li>
+						<li><a href="#team_section">Team</a></li>
+						<li><a href="#blog_section">Blog</a></li>
+						<li><a href="#contact_section">Contact</a></li>
+					</ul>
+				</nav>
+				<div id="trigger-menu" class="menu-icon desktop-hidden">
 					<i class="bx bx-menu"></i>
 				</div>
 			</div>
@@ -51,8 +61,13 @@
 
 		<main>
 			<!--==================== Hero ====================-->
-			<section id="home_section" class="section container">
-				<div class="img"><img src="assets/img/slider-img.png" alt="" /></div>
+			<section
+				id="home_section"
+				class="section container flex-desktop flex-row-reverse"
+			>
+				<div class="img img-center pop">
+					<img src="assets/img/slider-img.png" alt="" />
+				</div>
 				<div class="description">
 					<p class="top-title">Amazing Creative Team</p>
 					<h1 class="title">We Develop Best Solution for Your Business</h1>
@@ -66,8 +81,10 @@
 
 			<!--==================== About ====================-->
 
-			<section class="section container" id="about_section">
-				<div class="img"><img src="assets/img/about-img.png" alt="" /></div>
+			<section class="section container flex-desktop" id="about_section">
+				<div class="img img-center pop">
+					<img src="assets/img/about-img.png" alt="" />
+				</div>
 				<div class="description">
 					<p class="top-title">About Us</p>
 					<h1 class="title">We Innovate Digital Goods</h1>
@@ -87,8 +104,11 @@
 			</section>
 
 			<!--==================== Service ====================-->
-			<section id="why_us" class="section container">
-				<div class="img">
+			<section
+				id="why_us"
+				class="section container flex-desktop flex-row-reverse"
+			>
+				<div class="img img-center pop">
 					<img src="assets/img/service-img.png" alt="service" />
 				</div>
 				<div class="description">
@@ -128,9 +148,11 @@
 			</section>
 
 			<!--==================== Features ====================-->
-			<!-- <div class="bg-section">
-				<section class="section container" id="about_section">
-					<div class="img"><img src="assets/img/feature-img.png" alt="" /></div>
+			<div class="bg-section">
+				<section class="section container flex-desktop" id="about_section">
+					<div class="img img-center pop">
+						<img src="assets/img/feature-img.png" alt="" />
+					</div>
 					<div class="description">
 						<p class="top-title">Why Choose Us</p>
 						<h1 class="title">Never compromise with Quality</h1>
@@ -145,7 +167,7 @@
 						<button class="secondary-btn">Why Choose Us</button>
 					</div>
 				</section>
-			</div> -->
+			</div>
 			<!--==================== Products ====================-->
 			<section id="products_section" class="section container">
 				<div class="text-center">
@@ -210,7 +232,7 @@
 				</div>
 			</section>
 			<!--==================== Features ====================-->
-			<section id="why_us" class="section container">
+			<section id="why_us" class="section container flex-desktop">
 				<div class="description">
 					<p class="top-title">Features</p>
 					<h2 class="title">Top Features that Keep Us Ahed</h2>
@@ -238,14 +260,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="img">
+				<div class="img img-center pop">
 					<img src="assets/img/feature2-img.png" alt="feature" />
 				</div>
 			</section>
 			<!--==================== Testimonials ====================-->
 
 			<div class="bg-section">
-				<section class="section container">
+				<section class="section container latest-news">
 					<div class="text-center">
 						<p class="top-title">Latest News</p>
 						<h2 class="title">They Are Amazing</h2>
@@ -323,7 +345,7 @@
 			</div>
 
 			<!--==================== Team Members ====================-->
-			<section id="team_section" class="section container">
+			<section id="team_section" class="section container flex-start">
 				<div class="text-left">
 					<p class="top-title">Team Number</p>
 					<h2 class="title">Amazing Team</h2>
@@ -358,8 +380,8 @@
 								</div>
 							</div>
 						</div>
-						<h4>Johnson Doe</h4>
-						<p>Senior Attorney</p>
+						<h4>Alex Morrison</h4>
+						<p>Software Engineer</p>
 					</div>
 					<div class="team-member">
 						<div class="team-member-img">
@@ -372,8 +394,8 @@
 								</div>
 							</div>
 						</div>
-						<h4>Johnson Doe</h4>
-						<p>Senior Attorney</p>
+						<h4>Michael Waritson</h4>
+						<p>Senior TestSoftware</p>
 					</div>
 					<div class="team-member">
 						<div class="team-member-img">
@@ -387,20 +409,17 @@
 							</div>
 						</div>
 						<h4>Elizabeth Carroll</h4>
-						<p>Senior Attorney</p>
+						<p>UI/UX Designer</p>
 					</div>
 				</div>
 			</section>
 
-			<!--==================== Latest News ====================-->
-			<section class="section container"></section>
-
 			<!--==================== Partners ====================-->
-			<section class="section container">
+			<section id="partner_section" class="section container partners">
 				<div class="text-left">
 					<p class="top-title">Partners</p>
 					<h2 class="title">Trusted By Brands</h2>
-					<p class="paragraph">
+					<p class="paragraph width-75">
 						Kisicing elit, sed do eiusmod te mpor incididunt utlabore et dolore
 						ma gna aliqua. Ut enco laboris nisi ut aliquip ex ea com odo
 						consequat.
@@ -420,11 +439,11 @@
 
 			<!--==================== Blog ====================-->
 			<div class="bg-section">
-				<section id="blog_section" class="section container">
+				<section id="blog_section" class="section container blog">
 					<div class="text-left">
 						<p class="top-title">Latest News</p>
 						<h2 class="title">Form Our Blog</h2>
-						<p class="paragraph">
+						<p class="paragraph width-75">
 							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 							nisi ut aliquip ex ea
 						</p>
@@ -470,11 +489,123 @@
 				</section>
 			</div>
 			<!--==================== Contact ====================-->
-			<section class="section container"></section>
+			<section id="contact_section" class="section container contact">
+				<div class="text-left">
+					<p class="top-title">Contact Us</p>
+					<h2 class="title">Stay Connected</h2>
+					<p class="paragraph width-75">
+						Phasellus seiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam
+					</p>
+					<div class="address">
+						<ul>
+							<li>
+								<i class="bx bxs-map"></i>
+								<p>22/1 Lenina, Moscow 143409</p>
+							</li>
+							<li>
+								<i class="bx bx-envelope"></i>
+								<p>vpatsyuk@outlook.com</p>
+							</li>
+							<li>
+								<i class="bx bx-phone"></i>
+								<p>+7 (999) 123-45-67</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<form action="" class="contact">
+					<div class="input-container">
+						<input type="text" placeholder="Your Name" />
+						<input type="email" placeholder="Your Email" />
+						<input type="text" placeholder="Your Phone" />
+						<input type="text" placeholder="Subject" />
+					</div>
+					<textarea
+						name=""
+						id=""
+						cols="30"
+						rows="10"
+						placeholder="Write Your Message"
+					></textarea>
+					<button class="primary-btn">Submit Now</button>
+				</form>
+			</section>
 		</main>
 
 		<!--==================== Footer ====================-->
-		<footer class="footer"></footer>
+		<footer class="footer container">
+			<div class="top-footer">
+				<div class="address">
+					<h3 class="title">Address</h3>
+					<ul>
+						<li>
+							<i class="bx bxs-map"></i>
+							<p>22/1 Lenina, Moscow 143409</p>
+						</li>
+						<li>
+							<i class="bx bx-envelope"></i>
+							<p>vpatsyuk@outlook.com</p>
+						</li>
+						<li>
+							<i class="bx bx-phone"></i>
+							<p>+7 (999) 123-45-67</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="links">
+					<div class="link">
+						<h3 class="title">Links</h3>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Service</a></li>
+							<li><a href="#">Customer</a></li>
+							<li><a href="#">Career</a></li>
+						</ul>
+					</div>
+					<div class="link">
+						<h3 class="title">Help</h3>
+						<ul>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Doc</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Legal</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="newsletter">
+					<h3 class="title">Subscribe To Our Newsletter</h3>
+					<p class="paragraph">
+						Fectetur adipisicing elit, sed do eius mod tempor incididunt
+					</p>
+
+					<div class="newsletter-input">
+						<input type="email" placeholder="Your Email Here..." />
+						<button aria-label="Subscribe">
+							<i class="bx bx-mail-send"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom-footer">
+				<div class="copyright">
+					All right reserved © <a href="#">NAF-FLY</a>
+				</div>
+				<div class="foot-socials">
+					<a href="https://www.youtube.com" aria-label="youtube"
+						><i class="bx bxl-youtube"></i
+					></a>
+					<a href="https://www.github.com/naf-fly/" aria-label="github"
+						><i class="bx bxl-github"></i
+					></a>
+				</div>
+			</div>
+		</footer>
+
+		<div id="gotoup" class="gotoup"><i class="bx bx-chevron-up"></i></div>
 
 		<!--===== GSAP =====-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>

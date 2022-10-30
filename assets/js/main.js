@@ -39,9 +39,43 @@ prevBtn.addEventListener('click', () => {
 		count--
 	}
 })
+/*===== Go to top button =====*/
+let gotoup = document.getElementById('gotoup')
+;(window.onscroll = function () {
+	document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
+		? gotoup.classList.add('active')
+		: gotoup.classList.remove('active')
+}),
+	gotoup.addEventListener('click', () => {
+		;(document.body.scrollTop = 0), (document.documentElement.scrollTop = 0)
+	})
+
 /*===== GSAP ANIMATION =====*/
 // NAV
-
-// Hero
-
-// About
+gsap.from('.logo', {
+	opacity: 0,
+	duration: 1,
+	delay: 0.5,
+	y: 10,
+})
+gsap.from('.menu-icon', {
+	opacity: 0,
+	duration: 1,
+	delay: 0.7,
+	y: 10,
+})
+gsap.from('.desktop-menu ul li', {
+	opacity: 0,
+	duration: 1,
+	delay: 0.6,
+	y: 30,
+	stagger: 0.2,
+})
+// Sections
+gsap.from('.section > *', {
+	opacity: 0,
+	duration: 0.7,
+	delay: 1,
+	y: 30,
+	stagger: 0.2,
+})
